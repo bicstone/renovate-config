@@ -1,4 +1,5 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
   "assignees": ["bicstone"],
   "reviewers": ["bicstone"],
@@ -6,7 +7,11 @@
   "timezone": "Asia/Tokyo",
   "packageRules": [
     {
+      "automerge": true,
       "groupName": "devDependencies",
+      "major": {
+        "automerge": false
+      },
       "matchDepTypes": ["devDependencies"],
       "matchPackagePatterns": ["*"],
       "matchUpdateTypes": ["minor", "patch"]
