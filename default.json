@@ -3,7 +3,6 @@
   "extends": ["config:recommended"],
   "assignees": ["bicstone"],
   "reviewers": ["bicstone"],
-  "schedule": ["before 6am on Monday"],
   "timezone": "Asia/Tokyo",
   "packageRules": [
     {
@@ -12,7 +11,16 @@
       "matchDepTypes": ["devDependencies"],
       "matchPackagePatterns": ["*"],
       "matchUpdateTypes": ["minor", "patch"],
-      "platformAutomerge": true
+      "platformAutomerge": true,
+      "schedule": ["before 6am on Monday"]
+    },
+    {
+      "automerge": true,
+      "groupName": "packageManager",
+      "matchPackageNames": ["pnpm", "yarn"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "platformAutomerge": true,
+      "schedule": ["before 6am on Monday"]
     }
   ]
 }
