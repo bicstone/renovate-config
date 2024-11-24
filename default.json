@@ -21,6 +21,14 @@
       "matchUpdateTypes": ["minor", "patch"],
       "platformAutomerge": true,
       "schedule": ["before 6am on Monday"]
+    },
+    {
+      "automerge": true,
+      "groupName": "runtime",
+      "matchPackageNames": ["node"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "platformAutomerge": true,
+      "schedule": ["before 6am on Monday"]
     }
   ]
 }
