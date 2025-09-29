@@ -4,6 +4,7 @@
   "assignees": ["bicstone"],
   "reviewers": ["bicstone"],
   "timezone": "Asia/Tokyo",
+  "minimumReleaseAge": "1 week",
   "packageRules": [
     {
       "automerge": true,
